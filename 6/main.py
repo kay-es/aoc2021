@@ -1,7 +1,7 @@
 import collections
 
 with open('6/input.txt', 'r') as file:
-    lines = [int(x) for line in file for x in line.replace("\n", "").split(",")]
+    lines = [int(x) for line in file for x in line.strip().split(",")]
 
 cnts = collections.Counter(lines)
 max_recreation = max(9, max(lines)) + 1

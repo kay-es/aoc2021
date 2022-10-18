@@ -1,6 +1,6 @@
 
 with open('2/input.txt', 'r') as file:
-    lines = [line.replace("\n", "").split(" ") for line in file]
+    lines = [line.strip().split(" ") for line in file]
 
     forwards = [int(l[1]) for l in lines if l[0] == "forward"]
     ups = [int(l[1]) for l in lines if l[0] == "up"]

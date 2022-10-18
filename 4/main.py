@@ -1,5 +1,5 @@
 with open('4/input.txt', 'r') as file:
-    lines = [line.replace("\n", "") for line in file]
+    lines = [line.strip() for line in file]
 
 # gen numbers to draw
 numbers = [int(l) for l in lines[0].split(",")]

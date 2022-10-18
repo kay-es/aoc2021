@@ -1,5 +1,5 @@
 with open('3/input.txt', 'r') as file:
-    lines = [list(line.replace("\n", "")) for line in file]
+    lines = [list(line.strip()) for line in file]
 
 lines_trans = list(zip(*lines))
 gamma_rate = ""

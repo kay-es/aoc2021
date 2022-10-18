@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 with open('5/input.txt', 'r') as file:
-    lines = [line.replace("\n", "").replace(" -> ", ",").split(",") for line in file]
+    lines = [line.strip().replace(" -> ", ",").split(",") for line in file]
 
 coordinates = [[int(l)for l in line] for line in lines]
 

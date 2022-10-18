@@ -1,5 +1,5 @@
 with open('7/input.txt', 'r') as file:
-    lines = [int(x) for line in file for x in line.replace("\n", "").split(",")]
+    lines = [int(x) for line in file for x in line..strip().split(",")]
 
 hmin = min(lines)
 hmax = max(lines)
